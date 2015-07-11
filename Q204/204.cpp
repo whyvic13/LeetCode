@@ -16,7 +16,7 @@ O(n)
 class Solution {
 public:
     int countPrimes(int n) {
-        bool *isPrime = new isPrime[n];
+        bool *isPrime = new isPrime[n];//bool isPrime[n] = {true}; error why???
         for(int i=2;i<n;i++){
             isPrime[i] = true;
         }
