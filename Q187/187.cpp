@@ -1,3 +1,6 @@
+//use hash to produce unique key for unique string,and the same key for the same string
+//theoretically, no hash function could guarantee completely "unique". 
+//What a hash function try to guarantee is that "it's extremely hard to find a collision"
 class Solution {
 public:
     vector<string> findRepeatedDnaSequences(string s) {
