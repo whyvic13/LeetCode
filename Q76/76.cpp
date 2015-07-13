@@ -44,7 +44,9 @@ public:
                     minLength = fast - slow + 1;
                     res = s.substr(slow,minLength);
                 }
-                //shrink
+                //letterCounter will never change after it equals to T.length(), 
+                //but the truth is that if we shrink a certain char, letterCounter will less than T.length, 
+                //Also by adding these sentence, code will run much faster because of the cut-down of meaningless check.
                 window[s[slow]] --;
                 slow++;
                 count--;
