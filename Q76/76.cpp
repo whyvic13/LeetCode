@@ -11,7 +11,10 @@ The first For loop is used to construct variable "map".
 
 The second For loop is used to find the minimum window.
 
-The first thing we should do in the second For loop is to find a window which can cover T. I use "letterCounter" to be a monitor. If "letterCounter" is equal to T.length(), then we find this window. Before that, only the first If clause can be executed. However, after we find this window, the second If clause can also be executed.
+The first thing we should do in the second For loop is to find a window which can cover T. 
+I use "letterCounter" to be a monitor. If "letterCounter" is equal to T.length(), then we find this window. 
+Before that, only the first If clause can be executed. 
+However, after we find this window, the second If clause can also be executed.
 
 In the second If clause, we move "slow" forward in order to shrink the window size. Every time finding a smaller window, I update the result.
 
